@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/stylesheet/navbar.css">
+    <style>
+        body{
+            width: 70%;
+            margin: 0% 15%;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .heading{
+            text-align: center;
+            font-weight: 300;
+            font-size: 200%;
+            font-variant:small-caps;
+            margin:3%;
+        }
+        .sub-heading{
+            font-weight: 100;
+            font-size: 140%;
+            font-variant: small-caps;
+            margin: 0 0 1% 1%;
+        }
+        .room{
+            margin: 2% 0%;
+            align-content: center;
+            align-self: center;
+            display: flex;
+            width: 100%;
+        }
+        .image{
+            padding: 1%;
+            width: 30%;
+        }
+        .image img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .info{
+            padding: 1%;
+            width: 50%;
+
+        }
+        .info h4{
+            font-weight: 300;
+            font-size: 120%;
+            padding: 2% 0%;
+        }
+        .info p{
+            padding: 2% 0%;
+            font-size: 80%;
+        }
+        .info ul{
+            padding: 2% 4%;
+        }
+        .icons{
+            display: flex;
+        }
+        .icons img{
+            padding: 1%;
+            width: 30px;
+            height: 30px;
+        }
+
+        .price{
+            width: 20%;
+            padding: 2%;
+            justify-content: center;
+        }
+        .price p{
+            text-align: center;
+            margin-top: 10%;
+            font-size: 70%;
+        }
+        .price h1{
+            text-align: center;
+            font-weight: 300;
+            padding-top: 10%;
+        }
+        .book_now{
+            width: 100%;
+            margin: 10% 0%;
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 5%;
+            font-size: 100%;
+            font-weight: 100;
+        }
+
+        .span_am{
+            padding: 0% 25%;
+            display:none;
+            background-color: white;
+            border: 0.5px solid black;
+            border-radius: 15%;
+            font-size: 15px;
+            position: relative;
+            text-align: center;
+            top: -120%;
+        }
+        .span_am:after{
+            content:'';
+            position:absolute;
+            bottom:-35%;
+            width:10px;
+            height:10px;
+            border-bottom:0.5px solid black;
+            border-right:0.5px solid black;
+            background:white;
+            left:50%;
+            margin-left:-5px;
+            transform:rotate(45deg);
+        }
+        .am:hover span{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a class="navbar_a" href="#">AHV Resorts</a> 
+            </div>
+            <div class="navbar-contents">
+                <div class="navbar_home navbar-element">
+                    <a class="navbar_a" href="./index.html#home-nav">HOME</a>
+                </div>
+                <div class="navbar_about navbar-element">
+                    <a class="navbar_a" href="./index.html#about-nav">ABOUT</a>
+                </div>
+                <div class="navbar_rooms navbar-element">
+                    <a class="navbar_a" href="./index.html#rooms-nav">ROOMS</a>
+                </div>
+                <div class="navbar_services navbar-element">
+                    <a class="navbar_a" href="./index.html#services-nav">SERVICES</a>
+                </div>
+                <div class="navbar_gallery navbar-element">
+                    <a class="navbar_a" href="./index.html#gallery-nav">GALLERY</a>
+                </div>
+                <div class="navbar_reviews navbar-element">
+                    <a class="navbar_a" href="./index.html#review_img">REVIEWS</a>
+                </div>
+                <div class="navbar_contact navbar-element">
+                    <a class="navbar_a" href="./index.html#contact-nav">CONTACT</a>
+                </div>
+                <div class="navbar_bookaroom navbar-element">
+                    <a class="navbar_a" href="./book_page1.html">Book A Room</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <h2 class="heading">Book A Room</h2>
+    <h3 class="sub-heading">Our Rooms</h3>
+    <hr/>
+    <div class="result"> </div>
+    <hr/>
+    <div class="room" id="room1">
+        <div class="image">
+            <img src="../static/images/juniorSuite.webp" alt="">
+        </div>
+        <div class="info">
+            <h4>Junior Suite</h4>
+            <p>Our Junior Suites offer breathtaking views of the city skyline.</p>
+            <ul>
+                <li>Size: 260 sq ft</li>
+                <li>Beds: 2 Double(s)</li>
+            </ul>
+            <br/>
+            <hr>
+            <br/>
+
+            <div class="icons">
+                <div class="am">
+                    <img id="am_ac" src="../static/icons/AC.png" alt="">
+                    <span class="span_am"> A/C </span>
+                </div>
+                <div class="am">
+                    <img id="am_wifi" src="../static/icons/wifi.png" alt="">
+                    <span class="span_am">wifi</span>
+                </div>
+                <div class="am">
+                    <img id="am_tv" src="../static/icons/tv.png" alt="">
+                    <span class="span_am"> TV </span>
+                </div>
+                <div class="am">
+                    <img id="am_safe" src="../static/icons/safe.png" alt="">
+                    <span class="span_am"> safe </span>
+                </div>
+                <div class="am">
+                    <img id="am_minibar" src="../static/icons/minibar.png" alt="">
+                    <span class="span_am"> minibar </span>
+                </div>
+                <div class="am">
+                    <img id="am_telephone" src="../static/icons/telephone.png" alt="">
+                    <span class="span_am"> telephone </span>
+                </div>
+                <div class="am">
+                    <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
+                    <span class="span_am"> kitchen</span>
+                </div>
+                <div class="am">
+                    <img id="am_shower" src="../static/icons/shower.png" alt="">
+                    <span class="span_am"> shower </span>
+                </div>   
+            </div>
+        </div>
+        <div class="price">
+            <p>From</p>
+            <h1>₹ 18,000</h1>
+            <form action="">
+                <button class="book_now" type="submit">
+                    <a href="./checkout.html">Book Now</a> 
+                </button>
+            </form>
+            
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="room" id="room2">
+        <div class="image">
+            <img src="../static/images/standardHotelRoom.jpeg" alt="">
+        </div>
+        <div class="info">
+            <h4>Standard Room</h4>
+            <p>Our Standard Rooms are the perfect combination of function and comfort.</p>
+            <ul>
+                <li>Size: 230 sq ft</li>
+                <li>Beds: 1 Double(s)</li>
+            </ul>
+            <hr>
+            <div class="icons">
+                <img id="am_ac" src="../static/icons/AC.png" alt="">
+                <img id="am_wifi" src="../static/icons/wifi.png" alt="">
+                <img id="am_tv" src="../static/icons/tv.png" alt="">
+                <img id="am_safe" src="../static/icons/safe.png" alt="">
+                <img id="am_minibar" src="../static/icons/minibar.png" alt="">
+                <img id="am_telephone" src="../static/icons/telephone.png" alt="">
+                <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
+            </div>
+        </div>
+        <div class="price">
+            <p>From</p>
+            <h1>₹ 12,000</h1>
+            <form action="">
+                <button class="book_now" type="submit">
+                    <a href="./checkout.html">Book Now</a> 
+                </button>
+            </form>
+            
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class="room" id="room3">
+        <div class="image">
+            <img src="../static/images/superiorRoom.jpeg" alt="">
+        </div>
+        <div class="info">
+            <h4>Superior Room</h4>
+            <p>Our Superior Rooms are comfortable, roomy and elegant.</p>
+            <ul>
+                <li>Size: 280 sq ft</li>
+                <li>Beds: 1 King(s)</li>
+            </ul>
+            <hr>
+            <div class="icons">
+                <img id="am_ac" src="../static/icons/AC.png" alt="">
+                <img id="am_wifi" src="../static/icons/wifi.png" alt="">
+                <img id="am_tv" src="../static/icons/tv.png" alt="">
+                <img id="am_safe" src="../static/icons/safe.png" alt="">
+                <img id="am_minibar" src="../static/icons/minibar.png" alt="">
+                <img id="shower" src="../static/icons/shower.png" alt="">
+                <img id="am_telephone" src="../static/icons/telephone.png" alt="">
+                <img id="am_bath" src="../static/icons/bath.png" alt="">
+                <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
+                <img id="am_workspace" src="../static/icons/workspace.png" alt="">
+
+
+            </div>
+        </div>
+        <div class="price">
+            <p>From</p>
+            <h1>₹ 27,000</h1>
+            <form action="">
+                <button class="book_now" type="submit">
+                    <a href="./checkout.html">Book Now</a> 
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <hr/>
+    <br>
+    <br>
+</body>
+</html>

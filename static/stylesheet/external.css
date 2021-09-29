@@ -1,0 +1,473 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(73, 72, 72);
+  /* color: white; */
+
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(240, 240, 240);
+
+  /* color: white; */
+  /* background-color: rgb(2, 2, 2); */
+}
+
+.heading {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(61, 61, 61);
+  font-weight: lighter;
+  margin-block-start: 10%;
+  text-transform: uppercase;
+  /* color: white; */
+}
+
+.home,
+.about,
+.our_rooms,
+#services-nav,
+#gallery-nav,
+#review,
+.contact {
+  padding-top: 4%;
+}
+
+#home_caption {
+  margin-block-start: 0%;
+  text-transform: none;
+}
+
+.about_info {
+  margin: 0 20%;
+  text-align: center;
+}
+
+.icons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.caption {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: smaller;
+}
+
+.room_img {
+  display: none;
+  width: 100%;
+  height: 500px;
+  margin-block-start: 20%;
+}
+
+.room_slideshow {
+  margin-left: 20%;
+  margin-right: 20%;
+  position: relative;
+}
+
+.text-block_r {
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 35%;
+  height: 0;
+  padding-top: 35%;
+  overflow: auto;
+}
+
+.reviews_r {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  overflow: auto;
+  padding: 0 10%;
+}
+
+.review_text_r {
+  position: relative;
+  text-align: center;
+  font-size: 100%;
+}
+
+.services {
+  display: flex;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+.parallax {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-block-start: 10%;
+  position: relative;
+}
+
+#review_img {
+  background-image: url("../images/image4.jpg");
+}
+
+#home_img {
+  background-image: url("../images/hotel_ent.jpg");
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 40%;
+  height: 0;
+  padding-top: 40%;
+  overflow: auto;
+}
+
+.reviews {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  overflow: auto;
+  padding: 10%;
+}
+
+.review_text {
+  position: relative;
+  text-align: center;
+  font-size: 120%;
+  padding: 8%;
+}
+
+#spin:after {
+  content: '"It was very great to stay with the hotel. The staff behaviour and hospitality was excellent."';
+  animation: spin 15s linear infinite;
+}
+@keyframes spin {
+  0% {
+    content: '"The hotel is at very prime location. The staff is so good. its awesome room is properly cleaned. Everything thing is perfect."';
+  }
+  25% {
+    content: '"Fabulous stay. Nice ambiance! Nice view and service especially the manager and staffs are relly helpful."';
+  }
+  50% {
+    content: '"High standard hotel: rooms, food, staff, services...Everyone was super kind and helpful! I will come back definitely!"';
+  }
+  75% {
+    content: '"Nice Breakfast service. Room service excellent. There are many things to praise for!!"';
+  }
+}
+
+.contact {
+  padding: 0;
+  margin: 0;
+  padding-top: 1px;
+  /* background-color: rgb(240, 240, 240); */
+  background-color: rgb(218, 216, 216);
+  margin-block-start: 10%;
+}
+
+.con_info {
+  text-align: center;
+  margin: 3% 20% 0 20%;
+  font-style: italic;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-block-start: 5%;
+}
+
+td {
+  padding: 1%;
+}
+
+input {
+  border: 0;
+  height: 30px;
+}
+
+input:hover,
+textarea:hover {
+  border: 1px solid black;
+}
+
+textarea {
+  border: 0;
+}
+label,
+:placeholder-shown {
+  font-style: italic;
+  font-size: smaller;
+}
+
+#name,
+#email,
+#sub,
+#msg,
+#submit {
+  width: 100%;
+}
+
+#submit {
+  background-color: black;
+  color: #f2f2f2;
+}
+
+#submit:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+form {
+  margin-block-end: 0;
+}
+
+#googleMap {
+  margin: 0;
+  padding: 0;
+  height: 600px;
+  width: 100%;
+  background-color: rgb(218, 216, 216);
+  /* background-color: rgb(240, 240, 240); */
+}
+
+iframe {
+  padding-top: 30px;
+  margin-block-end: 0;
+}
+
+.footer {
+  margin: 0;
+  padding-top: 0.1%;
+  padding-bottom: 1%;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+  text-align: center;
+}
+
+.footer p {
+  color: #ffffff;
+  font-size: smaller;
+}
+
+#details {
+  text-align: left;
+  border-bottom: black;
+}
+
+.profiles {
+  color: #ffffff;
+}
+
+.profiles:hover {
+  color: #d3d3d3;
+}
+
+#fname,
+#lname,
+#guest_email,
+#phno,
+#country {
+  border: 1px solid rgb(204, 204, 204);
+  width: 250px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+#reqs {
+  border: 1px solid rgb(204, 204, 204);
+  width: 250px;
+}
+
+.country_cell {
+  vertical-align: top;
+}
+
+.checkout_container {
+  display: flex;
+  margin: 0 20%;
+}
+
+.details {
+  margin-right: 5%;
+}
+
+.summary {
+  height: 600px;
+  width: 500px;
+  background-color: rgb(240, 240, 240);
+  min-width: 300px;
+}
+
+.checkout_img {
+  position: relative;
+  margin: 5% 12%;
+  height: 25%;
+}
+
+.checkout_summary {
+  width: 90%;
+  margin: 0 5%;
+  text-align: justify;
+}
+
+#submit_ckout {
+  background-color: black;
+  color: #f2f2f2;
+  width: 500px;
+  margin: 0 2%;
+}
+
+.divider {
+  width: 85%;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .checkout_container {
+    display: block;
+  }
+
+  .details {
+    margin-right: 0;
+  }
+
+  .summary {
+    height: 600px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    min-width: 300px;
+  }
+
+  .checkout_img {
+    position: relative;
+    margin: 5% 30%;
+    height: 25%;
+  }
+}

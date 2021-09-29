@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .background{
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        /* filter: blur(4px); */
+    }
+    .form{
+        background-color: white;
+        border-radius: 10px;
+        position: absolute;
+        padding: 2%;
+        width: 20%;
+        top: 25%;
+        left: 10%;
+    }
+    .text{
+        position: absolute;
+        top: 42%;
+        right: 10%;
+        width: 25%;
+        text-align: center;
+        background-color: rgb(53, 41, 41, 0.5);
+    }
+
+    .heading{
+        font-weight: 900;
+        font-size: 250%;
+        color: white;
+        
+    }
+    .paragraph{
+        color: white;
+    }
+
+    form label{
+        font-size: 15px;
+        color: brown;
+    }
+    #check-in-date,
+    #check-out-date,
+    #rooms,
+    #adults,
+    #children,
+    .btn{
+        padding: 3%;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid burlywood;
+        margin-bottom: 7%;
+        /* background-color: wheat; */
+        /* color: brown; */
+    }
+    #check-in-date:focus,
+    #check-out-date:focus,
+    #rooms:focus,
+    #adults:focus,
+    #children:focus{
+        outline: none;
+        border: 2px solid burlywood;
+        
+    }
+    .btn a{
+        text-decoration: none;
+        color: white;
+    }
+    .btn{
+        background-color: burlywood;
+        margin-top: 5%;
+        color: white;
+        padding: 3%;
+        font-size: 100%;
+    }
+</style>
+<body>
+    <div class="container">
+        <img class="background" src="../static/images/background.jpg" alt="">
+    </div>
+
+    <div class="form">
+        <form action="./book_page2.html">
+            <label for="check-in">
+                <center>Check In</center> 
+                <!-- <input class="input" type="date" name="check-in-date" id="check-in-date" placeholder=""> -->
+                <input class="input" id="check-in-date" type="text" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" required>
+                <br/>
+            </label>
+            <label for="check-out">
+                <center>Check Out</center>
+                <input class="input" id="check-out-date" type="text" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" min=#check-in-date.date required>
+                <br/>
+            </label>
+            <label for="no-of-rooms">
+                <center>Rooms</center>
+                <input class="input" type="number" name="rooms" id="rooms" placeholder="Rooms" min="1" required><br/>
+            </label>
+            <label for="no-of-adults">
+                <center>Adults</center>
+                <input class="input" type="number" name="adults" id="adults" placeholder="Adults" min="1" required><br/>
+            </label>
+            <label for="no-of-children">
+                <center>Children</center>
+                <input class="input" type="number" name="children" id="children" placeholder="Children" min="0" required><br/>
+            </label>
+            <button class="btn" type="submit" onclick="button()">Search</button>
+
+        </form>
+    </div>
+
+    <div class="text">
+        <div class="heading">MAKE &nbsp;YOUR &nbsp;RESERVATION</div>
+        <!-- <div class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, tenetur. Expedita hic minus cum excepturi blanditiis consectetur enim facere dicta dolorum pariatur, veritatis sequi eum tempore ullam quisquam! Assumenda perferendis eius quis cum, quam totam quisquam, tempora quod architecto ratione, quo deserunt? Blanditiis laborum optio quod explicabo nulla eius hic.</div> -->
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

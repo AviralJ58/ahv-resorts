@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="../static/stylesheet/navbar.css">
+        <link rel="stylesheet" href="../static/stylesheet/external.css">
+    </head>
+    <style>
+        .navbar_a:hover{
+            color: white;
+            opacity: 0.5;
+        }
+    </style>
+
+    <body>
+        <!-- navigation bar -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-brand">
+                    <a class="navbar_a" href="#">AHV Resorts</a> 
+                </div>
+                <div class="navbar-contents">
+                    <div class="navbar_home navbar-element">
+                        <a class="navbar_a" href="#home-nav">HOME</a>
+                    </div>
+                    <div class="navbar_about navbar-element">
+                        <a class="navbar_a" href="#about-nav">ABOUT</a>
+                    </div>
+                    <div class="navbar_rooms navbar-element">
+                        <a class="navbar_a" href="#rooms-nav">ROOMS</a>
+                    </div>
+                    <div class="navbar_services navbar-element">
+                        <a class="navbar_a" href="#services-nav">SERVICES</a>
+                    </div>
+                    <div class="navbar_gallery navbar-element">
+                        <a class="navbar_a" href="#gallery-nav">GALLERY</a>
+                    </div>
+                    <div class="navbar_reviews navbar-element">
+                        <a class="navbar_a" href="#review">REVIEWS</a>
+                    </div>
+                    <div class="navbar_contact navbar-element">
+                        <a class="navbar_a" href="#contact-nav">CONTACT</a>
+                    </div>
+                    <div class="navbar_bookaroom navbar-element">
+                        <a class="navbar_a" href="./book_page1.html">Book A Room</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- home -->
+
+        <div class="home" id="home-nav">
+            <h1 class="heading"> AHV RESORTS </h1>
+            <h3 class="heading" id="home_caption"> <i> &#8212;&nbsp; Your home away from home&nbsp; &#8212;</i></h3>
+            <div class="parallax" id="home_img">
+            </div>
+        </div>
+
+        <!-- about  -->
+
+        <div class="about" id="about-nav">
+            <h2 class="heading">About</h2>
+            <div class="about_info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nulla voluptate aut explicabo. Voluptatem, quas cupiditate nihil non qui, tenetur hic dolores atque doloremque excepturi dignissimos eaque quia quisquam deleniti animi temporibus mollitia accusantium tempore, delectus quam. Reiciendis eius voluptatum delectus magnam atque officiis voluptatem, ratione, exercitationem reprehenderit quod alias itaque, veniam dicta? Qui molestias ab voluptatum corrupti at praesentium? Delectus at corporis veritatis accusamus impedit quos accusantium veniam? Consequuntur provident qui deleniti. Quaerat, cupiditate!</p>
+            </div>
+        </div>
+
+        <!-- rooms  -->
+        
+        <div class="our_rooms" id="rooms-nav">
+            <div class="room_slideshow">
+                <img class="room_img" src="../static/images/room1.jpeg">
+                <img class="room_img" src="../static/images/room.jpg">
+                <img class="room_img" src="../static/images/room3.jpeg">
+                <div class="text-block_r">
+                    <div class="reviews_r">
+                        <div class="review_header_r">
+                            <h3 class="heading">Our rooms</h3>
+                        </div>
+                        <div class="review_text_r">
+                            <p id="room_info">
+                                Junior Suite<br><br>Affordable luxury. Our Junior Suites are the perfect option if you’re looking for a little extra luxury. With an open 400 square foot floor plan, the Junior Suites offer the extra space you need to spread out and enjoy the breathtaking views of the city skyline.</p>
+                            <script>
+                                var text = ["Standard Room<br><br>Functional and comfortable. Sit back and enjoy one of our brand new 280 square foot Standard Rooms. Complete with courtyard views, stylish decor and natural light, our Standard Rooms are the perfect combination of function and comfort. Ideally suited for today’s business or leisure travelers.", "Superior Room<br><br>Elegant simplicity. Our Superior Rooms give you the space and privacy you need to work or play on the road. The spacious 380 square foot rooms include an intimate lounge area, business workstation and views of the courtyard. Complete with all the regular amenities, our Superior Rooms also include a daily newspaper and water bottles.","Junior Suite<br><br>Affordable luxury. Our Junior Suites are the perfect option if you’re looking for a little extra luxury. With an open 400 square foot floor plan, the Junior Suites offer the extra space you need to spread out and enjoy the breathtaking views of the city skyline."];
+                                var counter = 0;
+                                var elem = document.getElementById("room_info");
+                                var inst = setInterval(change, 5000);
+
+                                function change() {
+                                    elem.innerHTML = text[counter];
+                                    counter++;
+                                    if (counter >= text.length) {
+                                        counter = 0;
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("room_img");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 5000);
+            }
+        </script>
+
+        <!-- services  -->
+
+        <div id="services-nav">
+            <h2 class="heading"> OUR SERVICES </h2>
+            <div class="services">
+                <figure>
+                    <img src="../static/icons/breakfast.png" alt="Breakfast" height="40px" class="icons"/>
+                    <figcaption> Breakfast<br><p class="caption">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, repellat.</p> </figcaption>
+                </figure>
+                <figure>
+                    <img src="../static/icons/garden.png" alt="Garden" height="40px" class="icons"/>
+                    <figcaption> Garden<br><p class="caption">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, repellat.</p> </figcaption>
+                </figure>
+                <figure>
+                    <img src="../static/icons/pool.png" alt="Pool" height="40px" class="icons"/>
+                    <figcaption> Pool<br><p class="caption">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, repellat.</p> </figcaption>
+                </figure>
+            </div>
+            <div class="services">
+                <figure>
+                    <img src="../static/icons/wifi.png" alt=" Wifi " height="40px" class="icons"/>
+                    <figcaption>Wifi<br><p class="caption">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, repellat.</p> </figcaption>
+                </figure>
+                <figure>
+                    <img src="../static/icons/room service.png" alt="Room Service" height="40px" class="icons"/>
+                    <figcaption> Room Service<br><p class="caption">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, repellat.</p> </figcaption>
+                </figure>
+                <figure>
+                    <img src="../static/icons/housekeeping.png" alt="Housekeeping" height="40px" class="icons"/>
+                    <figcaption> Housekeeping<br><p class="caption">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, repellat.</p> </figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        <!-- gallery  -->
+
+        <div id="gallery-nav">        
+            <h2 class="heading"> PHOTO GALLERY </h2>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../static/images/hotel1.jpg" style="width:100%" height="500px">
+                    <div class="text">Swimming Pool</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../static/images/image2.jpg" style="width:100%" height="500px">
+                    <div class="text">Room</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../static/images/image3.jpg" style="width:100%" height="500px">
+                    <div class="text">Lobby</div>
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 5000);
+            }
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }    
+        </script>
+
+        <!-- review  -->
+        <div id="review">
+            <div class="parallax" id="review_img">
+
+            <div class="text-block">
+                <div class="reviews">
+                    <div class="review_header">
+                        <h3 class="heading">Guest Review</h3>
+                        <img src="../static/icons/quote.png" height="20px">
+                    </div>
+                    <div class="review_text">
+                        <p><span id="spin"></span></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+
+        <!-- contact  -->
+
+        <div class="contact" id="contact-nav">
+            <h2 class="heading">CONTACT US</h2>
+            <div class="con_info">
+                <p><a href="mailto:info@mysite.com">info@mysite.com</a> &nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp;Vellore Institute of Technology&nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp;Tel: +91 9876543210</p>
+            </div>
+
+            <div class="feedback">
+                <form name='feedback' action='POST'>
+                    <table>
+                        <tr>
+                            <td><label for='name'>Enter your Name</label></td>
+                            <td><label for='email'>Enter your Email</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Name" required id='name'/></td>
+                            <td><input type="email" placeholder="Email" required id='email'/></td>
+                        </tr>
+                        <tr>
+                            <td><label for='sub'>Enter the Subject</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan=2><input type="text" placeholder="Subject" required id='sub'/></td>
+                        </tr>
+                        <tr>
+                            <td><label for='msg'>Enter the Message</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea rows=10 cols=33 id='msg' required placeholder="Message"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan=2><input type="submit" id='submit'/></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div id="googleMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423075!2d79.15722781480746!3d12.97174299085577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1632491651180!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="footer">
+            <p>Made with &#10084; by <a href="https://github.com/AviralJ58" class="profiles">Aviral Jain</a>, <a href="https://github.com/hiteshdaga" class="profiles">Hitesh Daga</a> and <a href="https://github.com/vidipt-khetriwal" class="profiles">Vidipt Khetriwal</a></p>
+        </div>
+    </body>
+</html>
