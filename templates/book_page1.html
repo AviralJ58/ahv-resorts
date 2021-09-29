@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../static/stylesheet/external.css">
     <title>Document</title>
 </head>
 <style>
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
     .container{
         width: 100%;
         height: 100%;
@@ -18,7 +14,6 @@
         width: 100%;
         height: 100%;
         opacity: 0.7;
-        /* filter: blur(4px); */
     }
     .form{
         background-color: white;
@@ -29,7 +24,7 @@
         top: 25%;
         left: 10%;
     }
-    .text{
+    .text_reserv{
         position: absolute;
         top: 42%;
         right: 10%;
@@ -38,7 +33,7 @@
         background-color: rgb(53, 41, 41, 0.5);
     }
 
-    .heading{
+    .heading_reserv{
         font-weight: 900;
         font-size: 250%;
         color: white;
@@ -50,7 +45,6 @@
 
     form label{
         font-size: 15px;
-        color: brown;
     }
     #check-in-date,
     #check-out-date,
@@ -63,8 +57,6 @@
         border-radius: 10px;
         border: 1px solid burlywood;
         margin-bottom: 7%;
-        /* background-color: wheat; */
-        /* color: brown; */
     }
     #check-in-date:focus,
     #check-out-date:focus,
@@ -122,9 +114,55 @@
         </form>
     </div>
 
-    <div class="text">
-        <div class="heading">MAKE &nbsp;YOUR &nbsp;RESERVATION</div>
-        <!-- <div class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, tenetur. Expedita hic minus cum excepturi blanditiis consectetur enim facere dicta dolorum pariatur, veritatis sequi eum tempore ullam quisquam! Assumenda perferendis eius quis cum, quam totam quisquam, tempora quod architecto ratione, quo deserunt? Blanditiis laborum optio quod explicabo nulla eius hic.</div> -->
+    <div class="text_reserv">
+        <div class="heading_reserv">MAKE &nbsp;YOUR &nbsp;RESERVATION</div>
+    </div>
+
+    <!-- contact  -->
+
+    <div class="contact" id="contact-nav" style="margin-block-start: 0;">
+        <h2 class="heading">CONTACT US</h2>
+        <div class="con_info">
+            <p><a href="mailto:info@mysite.com">info@mysite.com</a> &nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp;Vellore Institute of Technology&nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp;Tel: +91 9876543210</p>
+        </div>
+
+        <div class="feedback">
+            <form name='feedback' action='POST'>
+                <table>
+                    <tr>
+                        <td><label for='name'>Enter your Name</label></td>
+                        <td><label for='email'>Enter your Email</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Name" required id='name'/></td>
+                        <td><input type="email" placeholder="Email" required id='email'/></td>
+                    </tr>
+                    <tr>
+                        <td><label for='sub'>Enter the Subject</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan=2><input type="text" placeholder="Subject" required id='sub'/></td>
+                    </tr>
+                    <tr>
+                        <td><label for='msg'>Enter the Message</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea rows=10 cols=33 id='msg' required placeholder="Message"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan=2><input type="submit" id='submit'/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div id="googleMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423075!2d79.15722781480746!3d12.97174299085577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1632491651180!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="footer">
+        <p>Made with &#10084; by <a href="https://github.com/AviralJ58" class="profiles">Aviral Jain</a>, <a href="https://github.com/hiteshdaga" class="profiles">Hitesh Daga</a> and <a href="https://github.com/vidipt-khetriwal" class="profiles">Vidipt Khetriwal</a></p>
     </div>
 
 

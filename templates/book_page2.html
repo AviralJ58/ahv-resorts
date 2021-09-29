@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <head>
     <title>Document</title>
+    <link rel="stylesheet" href="../static/stylesheet/external.css">
     <link rel="stylesheet" href="../static/stylesheet/navbar.css">
+
     <style>
-        body{
-            width: 70%;
-            margin: 0% 15%;
-        }
+
         *{
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
+
         a{
             text-decoration: none;
             color: white;
@@ -163,151 +163,196 @@
     </nav>
 
 
-    <h2 class="heading">Book A Room</h2>
-    <h3 class="sub-heading">Our Rooms</h3>
-    <hr/>
-    <div class="result"> </div>
-    <hr/>
-    <div class="room" id="room1">
-        <div class="image">
-            <img src="../static/images/juniorSuite.webp" alt="">
-        </div>
-        <div class="info">
-            <h4>Junior Suite</h4>
-            <p>Our Junior Suites offer breathtaking views of the city skyline.</p>
-            <ul>
-                <li>Size: 260 sq ft</li>
-                <li>Beds: 2 Double(s)</li>
-            </ul>
-            <br/>
-            <hr>
-            <br/>
+    <div class="booking_main" style="margin: 8% 20%;">
+        <h2 class="heading">Book A Room</h2>
+        <h3 class="sub-heading">Our Rooms</h3>
+        <hr/>
+        <div class="result"> </div>
+        <hr/>
+        <div class="room" id="room1">
+            <div class="image">
+                <img src="../static/images/juniorSuite.webp" alt="">
+            </div>
+            <div class="info">
+                <h4>Junior Suite</h4>
+                <p>Our Junior Suites offer breathtaking views of the city skyline.</p>
+                <ul>
+                    <li>Size: 260 sq ft</li>
+                    <li>Beds: 2 Double(s)</li>
+                </ul>
+                <br/>
+                <hr>
+                <br/>
 
-            <div class="icons">
-                <div class="am">
+                <div class="icons">
+                    <div class="am">
+                        <img id="am_ac" src="../static/icons/AC.png" alt="">
+                        <span class="span_am"> A/C </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_wifi" src="../static/icons/wifi.png" alt="">
+                        <span class="span_am">wifi</span>
+                    </div>
+                    <div class="am">
+                        <img id="am_tv" src="../static/icons/tv.png" alt="">
+                        <span class="span_am"> TV </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_safe" src="../static/icons/safe.png" alt="">
+                        <span class="span_am"> safe </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_minibar" src="../static/icons/minibar.png" alt="">
+                        <span class="span_am"> minibar </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_telephone" src="../static/icons/telephone.png" alt="">
+                        <span class="span_am"> telephone </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
+                        <span class="span_am"> kitchen</span>
+                    </div>
+                    <div class="am">
+                        <img id="am_shower" src="../static/icons/shower.png" alt="">
+                        <span class="span_am"> shower </span>
+                    </div>   
+                </div>
+            </div>
+            <div class="price">
+                <p>From</p>
+                <h1>₹ 18,000</h1>
+                <form action="">
+                    <button class="book_now" type="submit">
+                        <a href="./checkout.html">Book Now</a> 
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="room" id="room2">
+            <div class="image">
+                <img src="../static/images/standardHotelRoom.jpeg" alt="">
+            </div>
+            <div class="info">
+                <h4>Standard Room</h4>
+                <p>Our Standard Rooms are the perfect combination of function and comfort.</p>
+                <ul>
+                    <li>Size: 230 sq ft</li>
+                    <li>Beds: 1 Double(s)</li>
+                </ul>
+                <hr>
+                <div class="icons">
                     <img id="am_ac" src="../static/icons/AC.png" alt="">
-                    <span class="span_am"> A/C </span>
-                </div>
-                <div class="am">
                     <img id="am_wifi" src="../static/icons/wifi.png" alt="">
-                    <span class="span_am">wifi</span>
-                </div>
-                <div class="am">
                     <img id="am_tv" src="../static/icons/tv.png" alt="">
-                    <span class="span_am"> TV </span>
-                </div>
-                <div class="am">
                     <img id="am_safe" src="../static/icons/safe.png" alt="">
-                    <span class="span_am"> safe </span>
-                </div>
-                <div class="am">
                     <img id="am_minibar" src="../static/icons/minibar.png" alt="">
-                    <span class="span_am"> minibar </span>
-                </div>
-                <div class="am">
                     <img id="am_telephone" src="../static/icons/telephone.png" alt="">
-                    <span class="span_am"> telephone </span>
-                </div>
-                <div class="am">
                     <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
-                    <span class="span_am"> kitchen</span>
                 </div>
-                <div class="am">
-                    <img id="am_shower" src="../static/icons/shower.png" alt="">
-                    <span class="span_am"> shower </span>
-                </div>   
+            </div>
+            <div class="price">
+                <p>From</p>
+                <h1>₹ 12,000</h1>
+                <form action="">
+                    <button class="book_now" type="submit">
+                        <a href="./checkout.html">Book Now</a> 
+                    </button>
+                </form>
+                
             </div>
         </div>
-        <div class="price">
-            <p>From</p>
-            <h1>₹ 18,000</h1>
-            <form action="">
-                <button class="book_now" type="submit">
-                    <a href="./checkout.html">Book Now</a> 
-                </button>
-            </form>
-            
-        </div>
-    </div>
 
-    <hr/>
+        <hr/>
 
-    <div class="room" id="room2">
-        <div class="image">
-            <img src="../static/images/standardHotelRoom.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h4>Standard Room</h4>
-            <p>Our Standard Rooms are the perfect combination of function and comfort.</p>
-            <ul>
-                <li>Size: 230 sq ft</li>
-                <li>Beds: 1 Double(s)</li>
-            </ul>
-            <hr>
-            <div class="icons">
-                <img id="am_ac" src="../static/icons/AC.png" alt="">
-                <img id="am_wifi" src="../static/icons/wifi.png" alt="">
-                <img id="am_tv" src="../static/icons/tv.png" alt="">
-                <img id="am_safe" src="../static/icons/safe.png" alt="">
-                <img id="am_minibar" src="../static/icons/minibar.png" alt="">
-                <img id="am_telephone" src="../static/icons/telephone.png" alt="">
-                <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
+        <div class="room" id="room3">
+            <div class="image">
+                <img src="../static/images/superiorRoom.jpeg" alt="">
+            </div>
+            <div class="info">
+                <h4>Superior Room</h4>
+                <p>Our Superior Rooms are comfortable, roomy and elegant.</p>
+                <ul>
+                    <li>Size: 280 sq ft</li>
+                    <li>Beds: 1 King(s)</li>
+                </ul>
+                <hr>
+                <div class="icons">
+                    <img id="am_ac" src="../static/icons/AC.png" alt="">
+                    <img id="am_wifi" src="../static/icons/wifi.png" alt="">
+                    <img id="am_tv" src="../static/icons/tv.png" alt="">
+                    <img id="am_safe" src="../static/icons/safe.png" alt="">
+                    <img id="am_minibar" src="../static/icons/minibar.png" alt="">
+                    <img id="shower" src="../static/icons/shower.png" alt="">
+                    <img id="am_telephone" src="../static/icons/telephone.png" alt="">
+                    <img id="am_bath" src="../static/icons/bath.png" alt="">
+                    <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
+                    <img id="am_workspace" src="../static/icons/workspace.png" alt="">
+                </div>
+            </div>
+            <div class="price">
+                <p>From</p>
+                <h1>₹ 27,000</h1>
+                <form action="">
+                    <button class="book_now" type="submit">
+                        <a href="./checkout.html">Book Now</a> 
+                    </button>
+                </form>
             </div>
         </div>
-        <div class="price">
-            <p>From</p>
-            <h1>₹ 12,000</h1>
-            <form action="">
-                <button class="book_now" type="submit">
-                    <a href="./checkout.html">Book Now</a> 
-                </button>
-            </form>
-            
-        </div>
     </div>
-
-    <hr/>
-
-    <div class="room" id="room3">
-        <div class="image">
-            <img src="../static/images/superiorRoom.jpeg" alt="">
-        </div>
-        <div class="info">
-            <h4>Superior Room</h4>
-            <p>Our Superior Rooms are comfortable, roomy and elegant.</p>
-            <ul>
-                <li>Size: 280 sq ft</li>
-                <li>Beds: 1 King(s)</li>
-            </ul>
-            <hr>
-            <div class="icons">
-                <img id="am_ac" src="../static/icons/AC.png" alt="">
-                <img id="am_wifi" src="../static/icons/wifi.png" alt="">
-                <img id="am_tv" src="../static/icons/tv.png" alt="">
-                <img id="am_safe" src="../static/icons/safe.png" alt="">
-                <img id="am_minibar" src="../static/icons/minibar.png" alt="">
-                <img id="shower" src="../static/icons/shower.png" alt="">
-                <img id="am_telephone" src="../static/icons/telephone.png" alt="">
-                <img id="am_bath" src="../static/icons/bath.png" alt="">
-                <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
-                <img id="am_workspace" src="../static/icons/workspace.png" alt="">
-
-
-            </div>
-        </div>
-        <div class="price">
-            <p>From</p>
-            <h1>₹ 27,000</h1>
-            <form action="">
-                <button class="book_now" type="submit">
-                    <a href="./checkout.html">Book Now</a> 
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <hr/>
     <br>
     <br>
+
+    <!-- contact  -->
+
+    <div class="contact" id="contact-nav" style="margin: 0 0;">
+        <h2 class="heading">CONTACT US</h2>
+        <div class="con_info">
+            <p><a href="mailto:info@mysite.com" style="color: rgb(73, 72, 72);">info@mysite.com</a> &nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp;Vellore Institute of Technology&nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp;Tel: +91 9876543210</p>
+        </div>
+
+        <div class="feedback">
+            <form name='feedback' action='POST'>
+                <table>
+                    <tr>
+                        <td><label for='name'>Enter your Name</label></td>
+                        <td><label for='email'>Enter your Email</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Name" required id='name'/></td>
+                        <td><input type="email" placeholder="Email" required id='email'/></td>
+                    </tr>
+                    <tr>
+                        <td><label for='sub'>Enter the Subject</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan=2><input type="text" placeholder="Subject" required id='sub'/></td>
+                    </tr>
+                    <tr>
+                        <td><label for='msg'>Enter the Message</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea rows=10 cols=33 id='msg' required placeholder="Message"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan=2><input type="submit" id='submit'/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div id="googleMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423075!2d79.15722781480746!3d12.97174299085577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1632491651180!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="footer" style="padding-top: 1%;">
+        <p>Made with &#10084; by <a href="https://github.com/AviralJ58" class="profiles">Aviral Jain</a>, <a href="https://github.com/hiteshdaga" class="profiles">Hitesh Daga</a> and <a href="https://github.com/vidipt-khetriwal" class="profiles">Vidipt Khetriwal</a></p>
+    </div>
+
 </body>
 </html>

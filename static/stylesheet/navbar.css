@@ -43,6 +43,10 @@
   border: 1px solid white;
 }
 
+.navbar_a:hover{
+  color: rgb(202, 202, 202);
+}
+
 .navbar-element:hover {
   opacity: 0.5;
 }
