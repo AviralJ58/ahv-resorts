@@ -9,7 +9,7 @@
             <h2 class='heading'>book a room</h2>
             <div class="checkout_container">
                 <div class="details">
-                    <form name='details' method="POST">
+                    <form name='details' method="POST" action="../templates/checkout-final.html">
                         <table>
                             <th id="details">Guest Details</th>
                             <tr>
@@ -286,11 +286,7 @@
                             </tr>
                             <tr></tr>
                             <tr>
-                                <td colspan=2>
-                                    <button class="submit_out" type="submit">
-                                    <a href="../templates/checkout-final.html">Book Now</a> 
-                                    </button>
-                                </td>
+                                <td colspan=2><input type="submit" id='submit_ckout'/></td>
                             </tr>
                         </table>
                     </form>
