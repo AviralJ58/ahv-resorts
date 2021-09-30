@@ -430,7 +430,7 @@ iframe {
 }
 
 #submit_ckout {
-  background-color: black;
+  /* background-color: black; */
   color: #f2f2f2;
   width: 500px;
   margin: 0 2%;
