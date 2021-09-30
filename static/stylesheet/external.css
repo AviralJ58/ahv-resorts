@@ -462,3 +462,13 @@ iframe {
     height: 25%;
   }
 }
+
+.feedback_form input:focus,
+.feedback_form textarea:focus {
+  outline: none;
+}
+
+.guest_details_form input:focus,
+.guest_details_form textarea:focus {
+  outline: none;
+}

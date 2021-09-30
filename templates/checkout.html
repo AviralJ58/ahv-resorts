@@ -4,12 +4,11 @@
     </head>
 
     <body>
-
         <div class="booking">
             <h2 class='heading'>book a room</h2>
             <div class="checkout_container">
                 <div class="details">
-                    <form name='details' method="POST" action="../templates/checkout-final.html">
+                    <form name='details' method="POST" action="./checkout-final.html" class="guest_details_form">
                         <table>
                             <th id="details">Guest Details</th>
                             <tr>
@@ -35,7 +34,6 @@
                             <tr>
                                 <td rowspan=2 class="country_cell"><select id="country" name="country">
                                     <option value="Afganistan">Afghanistan</option>
-                                    <option value="Albania">Albania</option>
                                     <option value="Algeria">Algeria</option>
                                     <option value="American Samoa">American Samoa</option>
                                     <option value="Andorra">Andorra</option>
@@ -346,7 +344,7 @@
             </div>
 
             <div class="feedback">
-                <form name='feedback' action='POST'>
+                <form name='feedback' action='POST' class="feedback_form">
                     <table>
                         <tr>
                             <td><label for='name'>Enter your Name</label></td>

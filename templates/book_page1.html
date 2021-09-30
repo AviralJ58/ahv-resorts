@@ -85,16 +85,15 @@
     </div>
 
     <div class="form">
-        <form action="./book_page2.html">
+        <form action="./book_page2.html" name="search_form">
             <label for="check-in">
-                <center>Check In</center> 
-                <!-- <input class="input" type="date" name="check-in-date" id="check-in-date" placeholder=""> -->
-                <input class="input" id="check-in-date" type="text" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" required>
+                <center>Check In</center>
+                <input class="input" id="check-in-date" type="text" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" required name="check_in_date" onblur="checkinValid()">
                 <br/>
             </label>
             <label for="check-out">
                 <center>Check Out</center>
-                <input class="input" id="check-out-date" type="text" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" min=#check-in-date.date required>
+                <input class="input" id="check-out-date" type="text" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" min=#check-in-date.date required name="check_out_date" onblur="checkoutValid()">
                 <br/>
             </label>
             <label for="no-of-rooms">
@@ -127,7 +126,7 @@
         </div>
 
         <div class="feedback">
-            <form name='feedback' action='POST'>
+            <form name='feedback' action='POST' class="feedback_form">
                 <table>
                     <tr>
                         <td><label for='name'>Enter your Name</label></td>
@@ -166,6 +165,6 @@
     </div>
 
 
-    <script src="./index.js"></script>
+    <script src="../static/javascript/index.js"></script>
 </body>
 </html>

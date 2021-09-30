@@ -48,8 +48,8 @@
         .info{
             padding: 1%;
             width: 50%;
-
         }
+
         .info h4{
             font-weight: 300;
             font-size: 120%;
@@ -64,11 +64,18 @@
         }
         .icons{
             display: flex;
+            width: 100%;
+            /* background-color: black; */
         }
         .icons img{
             padding: 1%;
+            padding-right: 2%;
+            margin-right: 2%;
             width: 30px;
             height: 30px;
+        }
+        .am{
+            width: 100%;
         }
 
         .price{
@@ -98,31 +105,39 @@
         }
 
         .span_am{
-            padding: 0% 25%;
+            width: 50px;
+            padding: 5% 20% 5% 20%;
             display:none;
-            background-color: white;
+            background-color: black;
             border: 0.5px solid black;
+            color: white;
             border-radius: 15%;
-            font-size: 15px;
+            font-size: 12px;
             position: relative;
             text-align: center;
             top: -120%;
+            left: -20%;
         }
         .span_am:after{
             content:'';
             position:absolute;
-            bottom:-35%;
+            bottom:-30%;
             width:10px;
             height:10px;
             border-bottom:0.5px solid black;
             border-right:0.5px solid black;
-            background:white;
+            background:black;
             left:50%;
             margin-left:-5px;
             transform:rotate(45deg);
+            z-index: -1;
         }
         .am:hover span{
             display:block;
+        }
+        a:hover{
+            color: white;
+            opacity: 0.5;
         }
     </style>
 </head>
@@ -161,7 +176,6 @@
             </div>
         </div>
     </nav>
-
 
     <div class="booking_main" style="margin: 8% 20%;">
         <h2 class="heading">Book A Room</h2>
@@ -203,11 +217,11 @@
                     </div>
                     <div class="am">
                         <img id="am_minibar" src="../static/icons/minibar.png" alt="">
-                        <span class="span_am"> minibar </span>
+                        <span class="span_am"> bar </span>
                     </div>
                     <div class="am">
                         <img id="am_telephone" src="../static/icons/telephone.png" alt="">
-                        <span class="span_am"> telephone </span>
+                        <span class="span_am"> phone </span>
                     </div>
                     <div class="am">
                         <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
@@ -243,15 +257,37 @@
                     <li>Size: 230 sq ft</li>
                     <li>Beds: 1 Double(s)</li>
                 </ul>
-                <hr>
+                <hr/>
+                <br/>
                 <div class="icons">
-                    <img id="am_ac" src="../static/icons/AC.png" alt="">
-                    <img id="am_wifi" src="../static/icons/wifi.png" alt="">
-                    <img id="am_tv" src="../static/icons/tv.png" alt="">
-                    <img id="am_safe" src="../static/icons/safe.png" alt="">
-                    <img id="am_minibar" src="../static/icons/minibar.png" alt="">
-                    <img id="am_telephone" src="../static/icons/telephone.png" alt="">
-                    <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
+                    <div class="am">
+                        <img id="am_ac" src="../static/icons/AC.png" alt="">
+                        <span class="span_am"> A/C </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_wifi" src="../static/icons/wifi.png" alt="">
+                        <span class="span_am">wifi</span>
+                    </div>
+                    <div class="am">
+                        <img id="am_tv" src="../static/icons/tv.png" alt="">
+                        <span class="span_am"> TV </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_safe" src="../static/icons/safe.png" alt="">
+                        <span class="span_am"> safe </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_minibar" src="../static/icons/minibar.png" alt="">
+                        <span class="span_am"> bar </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_telephone" src="../static/icons/telephone.png" alt="">
+                        <span class="span_am"> phone </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
+                        <span class="span_am"> kitchen</span>
+                    </div>
                 </div>
             </div>
             <div class="price">
@@ -279,18 +315,50 @@
                     <li>Size: 280 sq ft</li>
                     <li>Beds: 1 King(s)</li>
                 </ul>
-                <hr>
+                <hr/>
+                <br/>
                 <div class="icons">
-                    <img id="am_ac" src="../static/icons/AC.png" alt="">
-                    <img id="am_wifi" src="../static/icons/wifi.png" alt="">
-                    <img id="am_tv" src="../static/icons/tv.png" alt="">
-                    <img id="am_safe" src="../static/icons/safe.png" alt="">
-                    <img id="am_minibar" src="../static/icons/minibar.png" alt="">
-                    <img id="shower" src="../static/icons/shower.png" alt="">
-                    <img id="am_telephone" src="../static/icons/telephone.png" alt="">
-                    <img id="am_bath" src="../static/icons/bath.png" alt="">
-                    <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
-                    <img id="am_workspace" src="../static/icons/workspace.png" alt="">
+
+                    <div class="am">
+                        <img id="am_ac" src="../static/icons/AC.png" alt="">
+                        <span class="span_am"> A/C </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_wifi" src="../static/icons/wifi.png" alt="">
+                        <span class="span_am">wifi</span>
+                    </div>
+                    <div class="am">
+                        <img id="am_tv" src="../static/icons/tv.png" alt="">
+                        <span class="span_am"> TV </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_safe" src="../static/icons/safe.png" alt="">
+                        <span class="span_am"> safe </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_minibar" src="../static/icons/minibar.png" alt="">
+                        <span class="span_am"> bar </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_telephone" src="../static/icons/telephone.png" alt="">
+                        <span class="span_am"> phone </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_kitchen" src="../static/icons/kitchen.png" alt="">
+                        <span class="span_am"> kitchen</span>
+                    </div>
+                    <div class="am">
+                        <img id="am_shower" src="../static/icons/shower.png" alt="">
+                        <span class="span_am"> shower </span>
+                    </div>  
+                    <div class="am">
+                        <img id="am_bath" src="../static/icons/bath.png" alt="">
+                        <span class="span_am"> bath </span>
+                    </div>
+                    <div class="am">
+                        <img id="am_workspace" src="../static/icons/workspace.png" alt="">
+                        <span class="span_am"> work </span>
+                    </div>
                 </div>
             </div>
             <div class="price">
@@ -316,7 +384,7 @@
         </div>
 
         <div class="feedback">
-            <form name='feedback' action='POST'>
+            <form name='feedback' action='POST' class="feedback_form">
                 <table>
                     <tr>
                         <td><label for='name'>Enter your Name</label></td>

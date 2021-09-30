@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .navbar_a {
   text-decoration: none;
@@ -43,7 +44,7 @@
   border: 1px solid white;
 }
 
-.navbar_a:hover{
+.navbar_a:hover {
   color: rgb(202, 202, 202);
 }
 
